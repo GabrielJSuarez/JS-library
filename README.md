@@ -1,6 +1,6 @@
 # Javascript Library
 
-> This is a library Web-App made with Javascript and Bootstrap 5 where the user can add information about books, delte created books, andedit the status if the user has already read it. 
+> This is a library Web-App made with Javascript and Bootstrap 5 where the user can add information about books, delete created books, and edit the status if the user has already read it.
 
 # Application Screenshot
 ![screenshot of Timeline Page](app_screenshot.png)
@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-You can visit [here]() our app.
+You can visit [here](https://gabrieljsuarez.github.io/JS-library/) our app.
 
 ## Getting Started
 
