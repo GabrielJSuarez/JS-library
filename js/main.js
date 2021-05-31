@@ -13,6 +13,29 @@ addForm.addEventListener('submit', function (e) {
   e.preventDefault();
 });
 
+function booksList() {
+  document.querySelector('#book-display').innerHTML = '';
+  const b = document.querySelector('#book-display');
+
+  for (let i = 0; i < myLibrary.length; i += 1) {
+    b.innerHTML += `
+    <div class="card border-success m-3 text-center" style="width: auto;">
+      <div class="card-header text-primary">${myLibrary[i].author}</div>
+      <div class="card-body text-success">
+        <h5 class="card-title">${myLibrary[i].title}</h5>
+        <p class="card-text">${myLibrary[i].pages}</p>
+        <p class="card-text">Did you read it?: <strong class="text-capitalize">${(myLibrary[i].read)}</strong></p>
+        <div class="d-flex">
+        <button type="button" class="btn btn-danger mx-3" onClick="deleteBook(${i})">Delete Book</button>
+        <button type="button" class="btn btn-info mx-3" onClick="readBook(${i})">Change Read</button>
+        </div>
+      </div>
+    </div>`
+
+    document.querySelector('#add-book').reset();
+  }
+}
+
 function addBookToLibrary() {
 
   const author = addForm.querySelector('#bookAuthor').value;
@@ -23,33 +46,17 @@ function addBookToLibrary() {
   const newBook = new Book(author, title, pages, bookRead);
 
   myLibrary.push(newBook);
-
-  const bookContainer = document.querySelector('#book-display');
-
-  let book = myLibrary[myLibrary.length - 1];
-
-  bookContainer.innerHTML +=`
-  <div class="card border-success mb-3 me-3 text-center" style="width: 18rem;">
-    <div class="card-header text-primary">${book.author}</div>
-    <div class="card-body text-success">
-      <h5 class="card-title">${book.title}</h5>
-      <p class="card-text">${book.pages}</p>
-      <p class="card-text">${(book.read) ? 'Book read' : 'Not read yet'}</p>
-      <button type="button" class="btn btn-danger me-3" id="deleteBook">Delete Book</button>
-      <button type="button" class="btn btn-info me-3" id="readBook">Read Book</button>
-    </div>
-  </div>`
-
-  document.querySelector('#add-book').reset();
+  booksList();
 }
 
 // Delete Books
 
-const books = document.querySelector('#book-display');
+function deleteBook(id) {
+  myLibrary.splice(id, 1);
+  booksList();
+}
 
-books.addEventListener('click', function (e) {
-    if (e.target.className.indexOf('btn-danger') != -1) {
-        const card = e.target.parentElement.parentElement;
-        books.removeChild(card);
-    }
-});
+function readBook(id) {
+  myLibrary[id].read = !myLibrary[id].read;
+  booksList();
+}
