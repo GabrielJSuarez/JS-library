@@ -11,7 +11,10 @@ const addForm = document.forms['add-book'];
 
 addForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  
+});
+
+function addBookToLibrary() {
+
   const author = addForm.querySelector('#bookAuthor').value;
   const title = addForm.querySelector('#bookTitle').value;
   const pages = addForm.querySelector('#bookPages').value;
@@ -19,11 +22,9 @@ addForm.addEventListener('submit', function (e) {
 
   const newBook = new Book(author, title, pages, bookRead);
   myLibrary.push(newBook);
-});
-
-console.log(myLibrary);
-function addBookToLibrary() {
-
+  console.log(myLibrary);
 }
 
-
+function resetForm() {
+  document.querySelector('#add-book').reset();
+}

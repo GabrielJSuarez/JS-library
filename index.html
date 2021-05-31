@@ -69,7 +69,11 @@
           <input type="checkbox" class="form-check-input me-3" id="bookRead" value="true">
           <label class="form-check-label" for="bookRead">Read it?</label>
         </div>
-        <button type="submit" class="btn btn-primary">Add Book</button>
+        
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary me-3" onclick="addBookToLibrary()">Add Book</button>
+          <button type="button" class="btn btn-danger" onclick="resetForm()">Reset Form</button>
+        </div>
       </form>
     </div>
   </div>
