@@ -1,4 +1,30 @@
-let myLibrary = [];
+
+let myLibrary = [
+  {
+    author: 'George Orwell',
+    title: '1984',
+    pages: '2000',
+    read: true
+  },
+  {
+    author: 'George R.R Martin',
+    title: 'A song of ice and fire',
+    pages: '3000',
+    read: false
+  },
+  {
+    author: 'Andrzej Sapkowski',
+    title: 'The witcher, the last wish',
+    pages: '500',
+    read: true
+  },
+  {
+    author: 'J.R.R Tolkien',
+    title: 'The Lord Of the Rings, The Return Of the King',
+    pages: '1500',
+    read: true
+  }
+];
 
 function Book(author, title, pages, read) {
     this.author = author;
@@ -8,6 +34,8 @@ function Book(author, title, pages, read) {
 }
 
 const addForm = document.forms['add-book'];
+
+booksList();
 
 addForm.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -19,7 +47,7 @@ function booksList() {
 
   for (let i = 0; i < myLibrary.length; i += 1) {
     bookDisplay.innerHTML += `
-    <div class="card border-success m-3 text-center" style="width: auto;">
+    <div class="card border-success m-3 text-center" style="width: 23rem;">
       <div class="card-header text-primary">${myLibrary[i].author}</div>
       <div class="card-body text-success">
         <h3 class="card-title">${myLibrary[i].title}</h3>
