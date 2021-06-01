@@ -33,8 +33,9 @@ function booksList() {
     <div class="card border-${(myLibrary[i].read) ? 'success' : 'danger'} m-3 text-center" style="width: 23rem;">
       <div class="card-header text-${(myLibrary[i].read) ? 'success' : 'danger'} fs-5">${myLibrary[i].title}</div>
       <div class="card-body text-${(myLibrary[i].read) ? 'success' : 'danger'}">
+        <p class="card-text mb-0">Written by:</p>
         <h3 class="card-title">${myLibrary[i].author}</h3>
-        <p class="card-text">${myLibrary[i].pages}</p>
+        <p class="card-text">${myLibrary[i].pages} pages</p>
         <p class="card-text">Did you read it?: <strong class="text-capitalize">${(myLibrary[i].read) ? 'Yes!' : 'No...'}</strong></p>
         <div class="d-flex">
         <button type="button" class="btn btn-warning mx-3" onClick="deleteBook(${i})">Delete Book</button>
