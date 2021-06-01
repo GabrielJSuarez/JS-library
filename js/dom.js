@@ -20,6 +20,22 @@ function addBookToLibrary() {
 
   const newBook = new Book(author, title, pages, bookRead);
 
+  const errors = document.querySelector('#error');
+
+  errors.innerHTML = '';
+  if (author === '') {
+    errors.innerHTML += "Author can't be blank";
+    return;
+  }
+  if (title === '') {
+    errors.innerHTML += "Title can't be blank";
+    return;
+  }
+  if (pages === '') {
+    errors.innerHTML += "Number of Pages can't be blank";
+    return;
+  }
+
   myLibrary.push(newBook);
   booksList();
 }
