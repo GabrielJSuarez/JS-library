@@ -25,3 +25,14 @@ let myLibrary = [
     read: true
   }
 ];
+
+// Book object constructor
+function Book(author, title, pages, read) {
+  this.author = author;
+  this.title = title;
+  this.pages = pages;
+  this.read = read;
+}
+
+// Render pre-set books
+booksList();
