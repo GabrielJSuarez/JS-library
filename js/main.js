@@ -28,10 +28,17 @@ let myLibrary = [
 
 // Book object constructor
 function Book(author, title, pages, read) {
+<<<<<<< HEAD
   this.author = author;
   this.title = title;
   this.pages = pages;
   this.read = read;
+=======
+    this.author = author;
+    this.title = title;
+    this.pages = pages;
+    this.read = read;
+>>>>>>> development-test
 }
 
 // Render pre-set books
