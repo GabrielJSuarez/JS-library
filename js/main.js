@@ -36,3 +36,17 @@ function Book(author, title, pages, read) {
 
 // Render pre-set books
 booksList();
+
+// Delete Books
+
+function deleteBook(id) {
+  myLibrary.splice(id, 1);
+  booksList();
+}
+
+// Update book read status
+
+function readBook(id) {
+  myLibrary[id].read = !myLibrary[id].read;
+  booksList();
+}
