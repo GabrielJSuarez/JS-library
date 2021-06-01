@@ -22,12 +22,51 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="container p-5">
+  <!-- Book Display -->
+  <div id="book-display" class="d-flex mb-5 me-3 flex-wrap">
+  </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- New book form -->
+  <p class="d-flex justify-content-center">
+    <button class="btn btn-primary px-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      New Book
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <form class="text-center" id="add-book">
+        <div class="mb-3">
+          <label for="bookAuthor" class="form-label">Book's Author</label>
+          <input type="text" class="form-control" id="bookAuthor">
+        </div>
+
+        <div class="mb-3">
+          <label for="bookTitle" class="form-label">Book's Title</label>
+          <input type="text" class="form-control" id="bookTitle">
+        </div>
+
+        <div class="mb-3">
+          <label for="bookPages" class="form-label">Book's Pages</label>
+          <input type="text" class="form-control" id="bookPages">
+        </div>
+
+        <div class="mb-3 form-check d-flex justify-content-center">
+          <input type="checkbox" class="form-check-input me-3" id="bookRead" value="true">
+          <label class="form-check-label" for="bookRead">Read it?</label>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary me-3" onclick="addBookToLibrary()">Add Book</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/dom.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
