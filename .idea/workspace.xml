@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3fb88485-9930-41b5-8d4c-a8452f1d0fb5" name="Default Changelist" comment="Add title to page" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tKCBymtXDEOMwT4TyzCDHoiM2r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fb88485-9930-41b5-8d4c-a8452f1d0fb5" name="Default Changelist" comment="" />
+      <created>1622508262037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622508262037</updated>
+      <workItem from="1622508264262" duration="38000" />
+      <workItem from="1622508305936" duration="2146000" />
+      <workItem from="1622562595131" duration="1096000" />
+    </task>
+    <task id="LOCAL-00001" summary="- Add readme">
+      <created>1622508322942</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508322942</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- Add HTML code for creating a new book and for showing books in the page">
+      <created>1622508457801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508457801</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- Add Bootstrap 5 to web page">
+      <created>1622508555672</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508555672</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- Add book array with pre-set data for showing in the webpage">
+      <created>1622508600603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508600603</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- Add book object constructor to script">
+      <created>1622508632745</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508632745</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- Add functionality to delete books and change their status">
+      <created>1622508673898</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508673898</updated>
+    </task>
+    <task id="LOCAL-00007" summary="- Create dom.js script for handling of DOM manipulation">
+      <created>1622508711409</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508711409</updated>
+    </task>
+    <task id="LOCAL-00008" summary="- Add functionality to avoid a reload of the page when submitting a new book entry">
+      <created>1622508763475</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508763475</updated>
+    </task>
+    <task id="LOCAL-00009" summary="- Create new book objects from UI and adding it to the Library Array">
+      <created>1622508803050</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508803050</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- Add the book arrays to the UI">
+      <created>1622508851738</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508851738</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- Add style folder">
+      <created>1622508905417</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622508905417</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- Add login and styling to card elements">
+      <created>1622509327126</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622509327126</updated>
+    </task>
+    <task id="LOCAL-00013" summary="- Add login and styling to card elements">
+      <created>1622509475850</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1622509475850</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add title to page">
+      <created>1622509862647</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1622509862647</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Add readme" />
+    <MESSAGE value="- Add HTML code for creating a new book and for showing books in the page" />
+    <MESSAGE value="- Add Bootstrap 5 to web page" />
+    <MESSAGE value="- Add book array with pre-set data for showing in the webpage" />
+    <MESSAGE value="- Add book object constructor to script" />
+    <MESSAGE value="- Add functionality to delete books and change their status" />
+    <MESSAGE value="- Create dom.js script for handling of DOM manipulation" />
+    <MESSAGE value="- Add functionality to avoid a reload of the page when submitting a new book entry" />
+    <MESSAGE value="- Create new book objects from UI and adding it to the Library Array" />
+    <MESSAGE value="- Add the book arrays to the UI" />
+    <MESSAGE value="- Add style folder" />
+    <MESSAGE value="- Add login and styling to card elements" />
+    <MESSAGE value="Add title to page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add title to page" />
+  </component>
+</project>
