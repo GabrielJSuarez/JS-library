@@ -13,14 +13,14 @@ addForm.addEventListener('submit', function (e) {
 
 const library = (() => {
   // Create new book objects from UI and adding it to the Library Array
-  const addBookToLibrary = (() => {
+  const addBookToLibrary = () => {
 
     const author = addForm.querySelector('#bookAuthor').value;
     const title = addForm.querySelector('#bookTitle').value;
     const pages = addForm.querySelector('#bookPages').value;
     const bookRead = addForm.querySelector('#bookRead').checked;
 
-    const newBook = bookFactory(author, title, pages, bookRead);
+    const newBook = new Book(author, title, pages, bookRead);
 
     const errors = document.querySelector('#error');
 
@@ -39,10 +39,10 @@ const library = (() => {
     }
     myLibrary.push(newBook);
     booksList();
-  });
+  };
 
   // Add the book arrays to the UI
-  const booksList = (() => {
+  const booksList = () => {
     const bookDisplay = document.querySelector('#book-display');
     bookDisplay.innerHTML = '';
 
@@ -55,14 +55,14 @@ const library = (() => {
           <p class="card-text">${myLibrary[i].pages}</p>
           <p class="card-text">Did you read it?: <strong class="text-capitalize">${(myLibrary[i].read) ? 'Yes!' : 'No...'}</strong></p>
           <div class="d-flex">
-          <button type="button" class="btn btn-danger mx-3" onClick="bookModification.deleteBook(${i})">Delete Book</button>
-          <button type="button" class="btn btn-info mx-3 text-light" onClick="bookModification.readBook(${i})">Change Read</button>
+          <button type="button" class="btn btn-danger mx-3" onClick="Book.deleteBook(${i})">Delete Book</button>
+          <button type="button" class="btn btn-info mx-3 text-light" onClick="Book.readBook(${i})">Change Read</button>
           </div>
         </div>
       </div>`
       document.querySelector('#add-book').reset();
     }
-  });
+  };
 
   return {
     addBookToLibrary, booksList
