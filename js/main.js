@@ -26,27 +26,30 @@ let myLibrary = [
   }
 ];
 
-// Book object constructor
-function Book(author, title, pages, read) {
+// Book Class constructor
+
+class Book {
+  // Delete Book
+  static deleteBook(id) {
+    myLibrary.splice(id, 1);
+    library.booksList();
+  }
+
+  // Change read status
+  static readBook(id) {
+    myLibrary[id].read = !myLibrary[id].read;
+    library.booksList();
+  }
+
+  constructor(author, title, pages, read) {
     this.author = author;
     this.title = title;
     this.pages = pages;
     this.read = read;
+  }
 }
+
+// const bookFactory = (author, title, pages, read) => { return { author, title, pages, read } };
 
 // Render pre-set books
-booksList();
-
-// Delete Books
-
-function deleteBook(id) {
-  myLibrary.splice(id, 1);
-  booksList();
-}
-
-// Update book read status
-
-function readBook(id) {
-  myLibrary[id].read = !myLibrary[id].read;
-  booksList();
-}
+library.booksList();

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fb88485-9930-41b5-8d4c-a8452f1d0fb5" name="Default Changelist" comment="Add title to page" />
+    <list default="true" id="3fb88485-9930-41b5-8d4c-a8452f1d0fb5" name="Default Changelist" comment="- Refactor JS code with factory functions and modules">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +32,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,6 +45,9 @@
       <workItem from="1622508264262" duration="38000" />
       <workItem from="1622508305936" duration="2146000" />
       <workItem from="1622562595131" duration="1096000" />
+      <workItem from="1622578642339" duration="6701000" />
+      <workItem from="1622598295742" duration="9000" />
+      <workItem from="1622644772139" duration="3974000" />
     </task>
     <task id="LOCAL-00001" summary="- Add readme">
       <created>1622508322942</created>
@@ -139,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622509862647</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- Refactor JS code with factory functions and modules">
+      <created>1622583542210</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1622583542210</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +186,7 @@
     <MESSAGE value="- Add style folder" />
     <MESSAGE value="- Add login and styling to card elements" />
     <MESSAGE value="Add title to page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add title to page" />
+    <MESSAGE value="- Refactor JS code with factory functions and modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Refactor JS code with factory functions and modules" />
   </component>
 </project>
